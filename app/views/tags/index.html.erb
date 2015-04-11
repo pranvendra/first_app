@@ -1,0 +1,12 @@
+<h2>
+	List of all Tags
+</h2>
+
+<ul id="tags">
+	<% @tags.each do |tag| %>
+	<ul>
+		<%= link_to tag.title, tag_path(tag) %>
+	</ul>
+
+	<% end %>
+</ul>
